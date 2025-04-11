@@ -4,8 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h1> vedant</h1>
+    <nav class="navbar navbar-expand-lg bg-dark-subtle text-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+                Vedanta Services
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#services">HOME</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#services">Action</a></li>
+                  <li><a class="dropdown-item" href="#services">Another action</a></li>
+                  <li><a class="dropdown-item" href="#services">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">ABOUT US</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#contact">BLOG</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+    
+            <!-- Contact Info (Hidden on Mobile) -->
+            <div class="d-none d-lg-block text-white">
+              <p class="mb-0"><i class="bi bi-telephone-fill"></i> <a class="text-white" href="tel:+91 9970747967">+91 9970747967</a></p>
+              <p class="mb-0"><i class="bi bi-envelope-fill"></i> <a  class="text-white" href="mailto:sales@psatechall.com">sales@psatechall.com</a> </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="images/home_slide_headers_homepage3_v2.jpg" class="d-block w-100" style="height: 500px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cloud Services and Web Development Starter Services</h5>
+              <p>Empowering your business with scalable cloud solutions and professional web development services.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/home_slide_aalbertsjaarverslagslideren.jpg" class="d-block w-100" style="height: 500px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cloud Services and Web Development Starter Services</h5>
+              <p>Empowering your business with scalable cloud solutions and professional web development services.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/home_slide_headers_homepage.jpg" class="d-block w-100" style="height: 500px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cloud Services and Web Development Starter Services</h5>
+              <p>Empowering your business with scalable cloud solutions and professional web development services.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="whatsapp-icon" style="position: fixed; right: 20px; bottom: 20px; z-index: 1000;">
+        <a href="https://wa.me/9970747967" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1219.547 1225.016" id="whatsapp">
+            <path fill="#E0E0E0"
+              d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z" />
+            <linearGradient id="a" x1="609.77" x2="609.77" y1="1190.114" y2="21.084" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#20b038" />
+              <stop offset="1" stop-color="#60d66a" />
+            </linearGradient>
+            <path fill="url(#a)"
+              d="M27.875 1190.114l82.211-300.18c-50.719-87.852-77.391-187.523-77.359-289.602.133-319.398 260.078-579.25 579.469-579.25 155.016.07 300.508 60.398 409.898 169.891 109.414 109.492 169.633 255.031 169.57 409.812-.133 319.406-260.094 579.281-579.445 579.281-.023 0 .016 0 0 0h-.258c-96.977-.031-192.266-24.375-276.898-70.5l-307.188 80.548z" />
+            <path fill="#FFF" fill-rule="evenodd"
+              d="M462.273 349.294c-11.234-24.977-23.062-25.477-33.75-25.914-8.742-.375-18.75-.352-28.742-.352-10 0-26.25 3.758-39.992 18.766-13.75 15.008-52.5 51.289-52.5 125.078 0 73.797 53.75 145.102 61.242 155.117 7.5 10 103.758 166.266 256.203 226.383 126.695 49.961 152.477 40.023 179.977 37.523s88.734-36.273 101.234-71.297c12.5-35.016 12.5-65.031 8.75-71.305-3.75-6.25-13.75-10-28.75-17.5s-88.734-43.789-102.484-48.789-23.75-7.5-33.75 7.516c-10 15-38.727 48.773-47.477 58.773-8.75 10.023-17.5 11.273-32.5 3.773-15-7.523-63.305-23.344-120.609-74.438-44.586-39.75-74.688-88.844-83.438-103.859-8.75-15-.938-23.125 6.586-30.602 6.734-6.719 15-17.508 22.5-26.266 7.484-8.758 9.984-15.008 14.984-25.008 5-10.016 2.5-18.773-1.25-26.273s-32.898-81.67-46.234-111.326z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- footer -->
+      <section>
+        <footer class="bg-dark text-white text-center"
+          style="background: url(/PSA-ResopnsiveWebsite-17-02/images/footer11.jpg) no-repeat center center/cover;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/profile.php?id=61573044214176"
+                target="_blank" role="button">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+    
+              <!-- Twitter -->
+              <!-- <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#" target="_blank"
+                role="button">
+                <i class="fab fa-twitter"></i>
+              </a> -->
+    
+              <!-- Google -->
+              <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="https://www.google.com/search?q=PSA+TECH&stick=H4sIAAAAAAAA_-NgU1IxqEg1tTRNTk5JtEixSE61SLIyqLBMSzU3NLY0Mzc0tTQyNTFbxMoREOyoEOLq7AEAIvEWVTMAAAA&hl=en&mat=CWWd7T8eG5EdElYBmzl_pee00u43pNS51QK2kf3wM-zle5x2rlLeE60czsnxZ9POHeIb_ZkCp1cPa25cJvHQyBRid8Cdw5jOO_woDn3EOC3WX-FKajAh3UgAMBY_pgyITg&authuser=0" target="_blank"
+                role="button">
+                <i class="fab fa-google"></i>
+              </a>
+    
+              <!-- Instagram -->
+              <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+                href="https://www.instagram.com/services.psatech/" target="_blank" role="button">
+                <i class="fab fa-instagram"></i>
+              </a>
+    
+              <!-- Linkedin -->
+          
+    
+              <!-- Github -->
+              <!-- <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#" target="_blank" role="button">
+                            <i class="fab fa-github"></i>
+                        </a> -->
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+    
+          <!-- Contact & Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.6);">
+            <p><i class="bi bi-telephone-fill"></i> <a class="text-white" href="tel:+91 9970747967">+91 9970747967</a> </p>
+            <p><i class="bi bi-envelope-fill"></i> <a  class="text-white" href="mailto:sales@psatechall.com">sales@psatechall.com</a>  </p>
+            ©2025 Copyright:
+            <a class="text-white" href="https://psatechall.com/">www.psatechall.com</a>
+          </div>
+          <!-- Contact & Copyright -->
+        </footer>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
